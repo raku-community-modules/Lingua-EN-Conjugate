@@ -1,4 +1,6 @@
 Revision history for Lingua::EN::Conjugate
 
 {{$NEXT}}
+
+0.3  2024-12-14T13:41:46+01:00
     - Initial version as a Raku Community module
