@@ -1,0 +1,38 @@
+use Test;
+
+use Lingua::EN::Conjugate;
+
+my @answers =
+  "I have been coding",
+  "I had been coding",
+  "you have been coding",
+  "you had been coding",
+  "he has been coding",
+  "he had been coding",
+  "she has been coding",
+  "she had been coding",
+  "it has been coding",
+  "it had been coding",
+  "we have been coding",
+  "we had been coding",
+  "you have been coding",
+  "you had been coding",
+  "they have been coding",
+  "they had been coding",
+;
+
+plan @answers + 1;
+
+my $verb = englishverb.new(bare => 'code', forms => <BeIng HaveEn>);
+my int $i;
+for < I you he she it we you they > -> $subject {
+    for < p sp > -> $tense {
+        $verb.tense = $tense;
+        is ~$verb.conjugate(:$subject), @answers[$i], @answers[$i++];
+    }
+}
+ 
+my @sentence = conjugate( bare => 'be', subject => 'it', interrogative => True );
+is @sentence ~ ' a function?', 'is it a function?', 'it is a function';
+
+# vim: expandtab shiftwidth=4

@@ -1,13 +1,26 @@
 {
-    "perl" : "6.*",
-    "name" : "Lingua::EN::Conjugate",
-    "version" : "0.2",
-    "description" : "A module that conjugates English verbs",
-    "author" : "Romuald Nuguet",
-    "provides" : {
-        "Lingua::EN::Conjugate" : "lib/Lingua/EN/Conjugate.pm6"
-    },
-    "depends" : [],
-    "source-url" : "https://github.com/kolikov/perl6-Lingua-EN-Conjugate.git"
+  "auth": "zef:raku-community-modules",
+  "author": "Romuald Nuguet",
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "A module that conjugates English verbs",
+  "license": "Artistic-2.0",
+  "name": "Lingua::EN::Conjugate",
+  "perl": "6.*",
+  "provides": {
+    "Lingua::EN::Conjugate": "lib/Lingua/EN/Conjugate.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/Lingua-EN-Conjugate.git",
+  "tags": [
+    "ENGLISH",
+    "CONJUGATION",
+    "TEXT"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.2"
 }
-
